@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import socket
 import argparse
 import psutil
@@ -72,8 +73,8 @@ def start_worker(master_ip, master_port, worker_name, num_cores):
 
             if msg_type == "TASK_BATCH":
                 task_id = msg["task_id"]
-                files_payload = msg["files"]  # List of [filename, content]
-                print(f"[{worker_id}] Menerima Task #{task_id} ({len(files_payload)} file) -> Memproses paralel...")
+                files_payload = msg["files"]
+                print(f"[{worker_id}] Menerima Task #{task_id} ({len(files_payload)} file) -> Memproses paralel ({cpu_cores} workers)...")
 
                 # Eksekusi paralel menggunakan multicore CPU Worker
                 batch_results = pool.map(process_text_payload, files_payload)
@@ -91,11 +92,24 @@ def start_worker(master_ip, master_port, worker_name, num_cores):
                 })
                 print(f"[{worker_id}] Task #{task_id} selesai & dikirim ke Master.")
 
+            elif msg_type == "ROUND_RESET":
+                next_info = msg.get("next_round", "berikutnya")
+                print(f"[{worker_id}] Ronde selesai! Tetap terhubung & standby untuk sesi: {next_info}...")
+
+            elif msg_type == "SIMULATE_FAIL":
+                print(f"[{worker_id}] [SIMULASI FAULT TOLERANCE] Node memutus koneksi mendadak saat sedang memproses task!")
+                time.sleep(0.3)
+                sock.close()
+                os._exit(1)
+
             elif msg_type == "SHUTDOWN":
-                print(f"[{worker_id}] Seluruh pekerjaan selesai. Worker berhenti.")
+                print(f"[{worker_id}] Seluruh sesi benchmark selesai. Worker berhenti.")
                 break
 
-    sock.close()
+    try:
+        sock.close()
+    except Exception:
+        pass
 
 if __name__ == "__main__":
     mp.freeze_support()
