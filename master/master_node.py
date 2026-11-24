@@ -64,12 +64,17 @@ class DistributedMaster:
         self.recovery_events.clear()
 
         if mode == "static":
-            chunk_size = max(1, len(loaded_files) // target_workers)
+            # Bagi tepat menjadi sebanyak target_workers batch (tidak pernah sisa task ke-10)
+            k, m = divmod(len(loaded_files), target_workers)
             task_id = 1
-            for i in range(0, len(loaded_files), chunk_size):
-                batch = loaded_files[i:i + chunk_size]
-                self.task_queue.append({"task_id": task_id, "files": batch})
-                task_id += 1
+            start = 0
+            for i in range(target_workers):
+                end = start + k + (1 if i < m else 0)
+                batch = loaded_files[start:end]
+                if batch:
+                    self.task_queue.append({"task_id": task_id, "files": batch})
+                    task_id += 1
+                start = end
         else:
             task_id = 1
             for i in range(0, len(loaded_files), self.batch_size):
