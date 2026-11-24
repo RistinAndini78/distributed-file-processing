@@ -1,0 +1,82 @@
+{
+    "sequential": {
+        "mode": "Sequential (1 Proses)",
+        "workers": 1,
+        "execution_time_sec": 5.2697,
+        "speedup": 1.0,
+        "efficiency_percent": 100.0,
+        "throughput_files_per_sec": 37.95,
+        "cpu_utilization_percent": 4.2,
+        "memory_usage_mb": 21.27,
+        "summary": {
+            "total_files_processed": 200,
+            "total_words_processed": 5000000,
+            "document_groups": {
+                "sains": 50,
+                "ekonomi": 50,
+                "kesehatan": 50,
+                "teknologi": 50
+            },
+            "keyword_search_results": {
+                "paralel": 37192,
+                "terdistribusi": 40194,
+                "server": 38268,
+                "kuantum": 33775,
+                "investasi": 36212,
+                "vaksin": 40251
+            },
+            "top_10_words": {
+                "pasar": 35328,
+                "terdistribusi": 34751,
+                "dokter": 34259,
+                "diagnosis": 34128,
+                "sel": 34027,
+                "energi": 33966,
+                "sistem": 33227,
+                "metabolisme": 32703,
+                "obat": 32146,
+                "laboratorium": 32109
+            }
+        }
+    },
+    "local_parallel": {
+        "mode": "Local Parallel (4 Core)",
+        "workers": 4,
+        "execution_time_sec": 2.3708,
+        "speedup": 2.2227,
+        "efficiency_percent": 55.57,
+        "throughput_files_per_sec": 84.36,
+        "cpu_utilization_percent": 44.4,
+        "memory_usage_mb": 23.33,
+        "summary": {
+            "total_files_processed": 200,
+            "total_words_processed": 5000000,
+            "document_groups": {
+                "sains": 50,
+                "ekonomi": 50,
+                "kesehatan": 50,
+                "teknologi": 50
+            },
+            "keyword_search_results": {
+                "paralel": 37192,
+                "terdistribusi": 40194,
+                "server": 38268,
+                "kuantum": 33775,
+                "investasi": 36212,
+                "vaksin": 40251
+            },
+            "top_10_words": {
+                "pasar": 35328,
+                "terdistribusi": 34751,
+                "dokter": 34259,
+                "diagnosis": 34128,
+                "sel": 34027,
+                "energi": 33966,
+                "sistem": 33227,
+                "metabolisme": 32703,
+                "obat": 32146,
+                "laboratorium": 32109
+            }
+        }
+    }
+}

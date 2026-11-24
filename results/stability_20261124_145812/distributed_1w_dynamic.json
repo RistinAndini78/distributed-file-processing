@@ -1,0 +1,30 @@
+{
+    "scenario": "Distributed (1 Workers - DYNAMIC)",
+    "num_workers": 1,
+    "load_balancing_mode": "dynamic",
+    "total_files": 200,
+    "execution_time_sec": 4.1922,
+    "speedup_vs_sequential": 1.257,
+    "efficiency_percent": 125.7,
+    "throughput_files_per_sec": 47.71,
+    "master_cpu_percent": 63.3,
+    "master_memory_mb": 22.3,
+    "load_distribution_files_per_worker": {
+        "Worker1@DESKTOP-L081B77": 200
+    },
+    "fault_tolerance_recoveries": [],
+    "document_groups": {
+        "sains": 50,
+        "ekonomi": 50,
+        "kesehatan": 50,
+        "teknologi": 50
+    },
+    "keyword_search_results": {
+        "paralel": 37192,
+        "terdistribusi": 40194,
+        "server": 38268,
+        "kuantum": 33775,
+        "investasi": 36212,
+        "vaksin": 40251
+    }
+}

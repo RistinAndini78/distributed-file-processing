@@ -1,0 +1,61 @@
+[Master] Task Decomposition selesai: 200 file dipecah menjadi 40 task (Mode: DYNAMIC).
+[Master] Server berjalan di 0.0.0.0:51201
+[Master] Menunggu 1 Worker terhubung untuk memulai eksekusi...
+
+[Master] Worker terhubung (1/1): Worker1@DESKTOP-L081B77 [1 Core, IP: 127.0.0.1]
+
+[Master] Semua Worker siap! Memulai pemrosesan terdistribusi...
+
+[Master] Progress: 1/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 2/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 3/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 4/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 5/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 6/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 7/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 8/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 9/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 10/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 11/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 12/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 13/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 14/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 15/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 16/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 17/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 18/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 19/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 20/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 21/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 22/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 23/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 24/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 25/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 26/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 27/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 28/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 29/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 30/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 31/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 32/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 33/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 34/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 35/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 36/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 37/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 38/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 39/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 40/40 task selesai (dari Worker1@DESKTOP-L081B77)
+
+=======================================================
+HASIL PENGUJIAN TERDISTRIBUSI (1 WORKER | MODE: DYNAMIC)
+=======================================================
+Total File Diproses : 200
+Waktu Eksekusi      : 4.1922 detik
+Speedup (vs Seq)    : 1.257x
+Efficiency          : 125.7%
+Throughput          : 47.71 file/detik
+Distribusi Beban    : {'Worker1@DESKTOP-L081B77': 200}
+Kelompok Dokumen    : {'sains': 50, 'ekonomi': 50, 'kesehatan': 50, 'teknologi': 50}
+=======================================================
+[Info] Laporan JSON tersimpan di 'results\distributed_1w_dynamic.json'.

@@ -1,0 +1,64 @@
+[Master] Task Decomposition selesai: 200 file dipecah menjadi 40 task (Mode: DYNAMIC).
+[Master] Server berjalan di 0.0.0.0:51203
+[Master] Menunggu 4 Worker terhubung untuk memulai eksekusi...
+
+[Master] Worker terhubung (1/4): Worker1@DESKTOP-L081B77 [1 Core, IP: 127.0.0.1]
+[Master] Worker terhubung (2/4): Worker2@DESKTOP-L081B77 [1 Core, IP: 127.0.0.1]
+[Master] Worker terhubung (3/4): Worker3@DESKTOP-L081B77 [1 Core, IP: 127.0.0.1]
+[Master] Worker terhubung (4/4): Worker4@DESKTOP-L081B77 [1 Core, IP: 127.0.0.1]
+
+[Master] Semua Worker siap! Memulai pemrosesan terdistribusi...
+
+[Master] Progress: 1/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 2/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 3/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 4/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 5/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 6/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 7/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 8/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 9/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 10/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 11/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 12/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 13/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 14/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 15/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 16/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 17/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 18/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 19/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 20/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 21/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 22/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 23/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 24/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 25/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 26/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 27/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 28/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 29/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 30/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 31/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 32/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 33/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 34/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 35/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 36/40 task selesai (dari Worker4@DESKTOP-L081B77)
+[Master] Progress: 37/40 task selesai (dari Worker1@DESKTOP-L081B77)
+[Master] Progress: 38/40 task selesai (dari Worker2@DESKTOP-L081B77)
+[Master] Progress: 39/40 task selesai (dari Worker3@DESKTOP-L081B77)
+[Master] Progress: 40/40 task selesai (dari Worker4@DESKTOP-L081B77)
+
+=======================================================
+HASIL PENGUJIAN TERDISTRIBUSI (4 WORKER | MODE: DYNAMIC)
+=======================================================
+Total File Diproses : 200
+Waktu Eksekusi      : 2.0769 detik
+Speedup (vs Seq)    : 2.5373x
+Efficiency          : 63.43%
+Throughput          : 96.3 file/detik
+Distribusi Beban    : {'Worker1@DESKTOP-L081B77': 55, 'Worker2@DESKTOP-L081B77': 50, 'Worker3@DESKTOP-L081B77': 50, 'Worker4@DESKTOP-L081B77': 45}
+Kelompok Dokumen    : {'ekonomi': 50, 'kesehatan': 50, 'teknologi': 50, 'sains': 50}
+=======================================================
+[Info] Laporan JSON tersimpan di 'results\distributed_4w_dynamic.json'.
